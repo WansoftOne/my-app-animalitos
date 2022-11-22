@@ -1,7 +1,13 @@
 import logo from './logo.svg';
+import { MiComponente } from './componentes/MiComponente'
 import './App.css';
+import './componentes/App1.css';
 
 function App() {
+  const nombre1 = "Carmen";
+  const nombre2 = "Magda";
+  const nombre3 = "Jere";
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +24,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <MiComponente nombre={nombre1} obj={{nombre: "nombre"}}/>
+      <MiComponente nombre={nombre2} />
+      <MiComponente nombre={nombre3} />
+      <MiComponente />
     </div>
   );
 }

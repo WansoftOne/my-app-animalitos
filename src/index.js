@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { MiComponente } from './componentes/MiComponente'
 import reportWebVitals from './reportWebVitals';
+import { Timer } from './componentes/Timer';
+import { Galeria } from './componentes/Galeria';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Galeria />
   </React.StrictMode>
 );
 
